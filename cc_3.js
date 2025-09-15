@@ -15,5 +15,8 @@ newPurchase= customers[2]
 newPurchase.push("Scout Regiment Robe")
 console.log(newPurchase)
 
-customers.forEach(obj=> console.log(`${customers}))
-    
+name1=customers[0]
+email=customers[1]
+purchases=customers[2]
+
+customers.forEach(obj=> console.log(`${customers} \t|\t ${email}\t|\t ${purchases}`))
