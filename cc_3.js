@@ -1,8 +1,14 @@
 // Coding Challenge 3 //
-let customers = [{name:"Eren Yeager",email:"erenyeager@gmail.com", purchases:["Sword", "ODM Gear"]}],
-    {name:"Armin Arlert",email:"arminarlert@gmail.com", purchases:["Sword", "ODM Gear"]},
-    {name:"Mikasa Ackermann",email:"mikasaackermann@gmail.com", purchases:["Sword", "ODM Gear"]},
-   {name:"Hange Zoe",email:"hangezoe@gmail.com", purchases:["Sword", "ODM Gear","Titan Serum"]};
+let customers = ["Eren Yeager","erenyeager@gmail.com", ["Sword Set", "ODM Gear"]],
+    ["Armin Arlert", "armin@gmail.com", ["Sword Set", "ODM Gear"]],
+    ["Mikasa Ackermann", "mikasaackermann@gmail.com", ["Sword Set", "ODM Gear"]],
+   ["Hange Zoe", "hangezoe@gmail.com",["Sword Set ", "ODM Gear"]];
 
-inventory.forEach(obj=> console.log(`${obj.sku} \t|\t ${obj.name}`))
-inventory.push({name:"Reiner Braun",email:"reinerbraun@gmail.com", purchases:["Sword", "ODM Gear"]})
+customers.forEach(obj=> console.log(`${obj.sku} \t|\t ${obj.name}`))
+customers.push("Reiner Braun", "reinerbraun@gmail.com", ["Sword Set", "ODM Gear"])
+xyz= customers.shift()
+console.log(xyz)
+
+customers[1]= 'arminarlert@gmail.com'
+console.log(customers)
+newPurchase= customerspush()
